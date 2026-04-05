@@ -219,17 +219,16 @@ body {
 }
 .quality {
   display: flex;
-  width: clamp(320px, 50%, 800px);
+  width: clamp(310px, 50%, 800px);
   border: 1px solid #d9d9da;
 }
 .qualityImg {
-  width: clamp(320px, 50%, 600px);
+  width: clamp(320px, 100%, 600px);
 }
 .speed,
 .value {
   border: 1px solid #d9d9da;
-  width: clamp(300px, 25%, 490px);
-  height: auto;
+  width: clamp(310px, 25%, 490px);
 }
 
 .qualityInfo {
