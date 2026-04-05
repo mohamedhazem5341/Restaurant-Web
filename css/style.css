@@ -218,13 +218,13 @@ body {
 }
 .quality {
   display: flex;
-  width: 45%;
-  border: 1px solid #D9D9DA;
+  width: clamp(260px, 50vw, 520px);
+  border: 1px solid #d9d9da;
 }
 .speed,
 .value {
-  border: 1px solid #D9D9DA;
-  width: 25%;
+  border: 1px solid #d9d9da;
+  width: clamp(260px, 10vw, 290px);
   height: auto;
 }
 
@@ -288,13 +288,15 @@ body {
     height: 250px;
   }
   .ourPerks {
-  flex-flow: column;
-}
-.quality {
-  width: 90%;
-}
-.speed,
-.value {
-  width: 90%;
-}
+    flex-flow: column;
+    align-items: center;
+  }
+  .quality {
+    flex-flow: column;
+    /* width: 90%; */
+  }
+  /* .speed,
+  .value {
+    width: 90%; 
+  } */
 }
