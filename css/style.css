@@ -248,13 +248,13 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: black;
-  transition: all 0.5s linear;
+  transition: all 0.2s ease;
 }
 .learnMore span {
   margin-left: 8px;
 }
 .learnMore:hover {
-  font-weight: 700;
+  letter-spacing: 1px;
 }
 .learnMore:hover span {
   margin-left: 10px;
