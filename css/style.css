@@ -288,6 +288,9 @@ body {
   .heroImg {
     height: 250px;
   }
+  .whyUsSection{
+    padding: 0px 20px;
+  }
   .ourPerks {
     flex-flow: column;
     align-items: center;
