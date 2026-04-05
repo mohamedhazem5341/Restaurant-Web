@@ -179,14 +179,6 @@ body {
   object-fit: cover;
 }
 /* ////////////////////// */
-.whyUsSection {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: 10px;
-  padding: 0px 50px;
-  margin-bottom: 8vw;
-}
 .whyUsSection h4 {
   font-size: var(--h3s-font);
 }
@@ -197,13 +189,6 @@ body {
 .whyUsSection p {
   font-size: var(--p-font);
   margin-bottom: 60px;
-}
-.ourPerks {
-  width: clamp(300px, 100%, 2000px);
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  gap: clamp(5px, 3vw, 20px);
 }
 .ourPerks h1 {
   font-size: var(--secondary-font);
@@ -218,30 +203,45 @@ body {
   margin-bottom: 20px;
 }
 
+.whyUsSection {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 50px;
+  margin-bottom: 8vw;
+}
+.ourPerks {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: clamp(5px, 3vw, 20px);
+}
 .quality,
 .speed,
 .value {
+  background-color: var(--bg);
+
   display: flex;
   flex-flow: column;
+  justify-content: space-between;
   border: 1px solid #d9d9da;
   width: clamp(310px, 25%, 490px);
+  height: 450px;
 }
 .quality {
   flex-flow: row;
-  width: clamp(310px, 40%, 800px);
+  width: clamp(310px, 42%, 800px);
 }
 .qualityInfo {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  background-color: var(--bg);
   padding: clamp(10px, 2vw, 20px);
   height: 100%;
-
 }
 .speedInfo,
 .valueInfo {
-  height: 30%;
   background-color: var(--bg);
   padding: clamp(10px, 2vw, 20px);
 }
@@ -260,12 +260,11 @@ body {
 .learnMore:hover span {
   margin-left: 10px;
 }
-.qualityImg,
+
 .speedImg,
 .valueImg {
   width: 100%;
-  height: 100%;
-  height: clamp(200px, 50%, 400px);
+  height: 50%;
 }
 .ourPerks img {
   display: block;
@@ -274,12 +273,15 @@ body {
   object-fit: cover;
 }
 
-/* @media (max-width: 900px) {
+@media (max-width: 1239px) {
 .quality {
   display: flex;
     flex-direction: column;
 }
-} */
+.qualityImg{
+  height: 50%;
+}
+}
 /* small devices below 630px wide */
 @media (max-width: 630px) {
   .navbar .links {
