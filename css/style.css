@@ -217,28 +217,31 @@ body {
 .ourPerks p {
   margin-bottom: 20px;
 }
-.quality {
-  display: flex;
-  width: clamp(310px, 50%, 800px);
-  border: 1px solid #d9d9da;
-}
-.qualityImg {
-  width: clamp(320px, 100%, 600px);
-}
+
+.quality,
 .speed,
 .value {
+  display: flex;
+  flex-flow: column;
   border: 1px solid #d9d9da;
   width: clamp(310px, 25%, 490px);
 }
-
+.quality {
+  flex-flow: row;
+  width: clamp(310px, 40%, 800px);
+}
 .qualityInfo {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  background-color: var(--bg);
+  padding: clamp(10px, 2vw, 20px);
+  height: 100%;
+
 }
-.qualityInfo,
 .speedInfo,
 .valueInfo {
+  height: 30%;
   background-color: var(--bg);
   padding: clamp(10px, 2vw, 20px);
 }
@@ -257,11 +260,12 @@ body {
 .learnMore:hover span {
   margin-left: 10px;
 }
-
+.qualityImg,
 .speedImg,
 .valueImg {
   width: 100%;
-  height: clamp(300px, 20vw, 400px);
+  height: 100%;
+  height: clamp(200px, 50%, 400px);
 }
 .ourPerks img {
   display: block;
