@@ -199,6 +199,7 @@ body {
   margin-bottom: 60px;
 }
 .ourPerks {
+    border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -219,13 +220,13 @@ body {
 }
 .quality {
   display: flex;
-  width: clamp(260px, 40%, 800px);
+  width: clamp(280px, 40%, 800px);
   border: 1px solid #d9d9da;
 }
 .speed,
 .value {
   border: 1px solid #d9d9da;
-  width: clamp(260px, 25%, 490px);
+  width: clamp(280px, 25%, 490px);
   height: auto;
 }
 
@@ -289,7 +290,7 @@ body {
     height: 250px;
   }
   .whyUsSection{
-    padding: 0px 20px;
+    padding: 0px 50px;
   }
   .ourPerks {
     flex-flow: column;
