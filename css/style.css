@@ -287,4 +287,14 @@ body {
   .heroImg {
     height: 250px;
   }
+  .ourPerks {
+  flex-flow: column;
+}
+.quality {
+  width: 90%;
+}
+.speed,
+.value {
+  width: 90%;
+}
 }
