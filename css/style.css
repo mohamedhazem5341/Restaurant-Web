@@ -221,7 +221,6 @@ body {
 .speed,
 .value {
   background-color: var(--bg);
-
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -305,16 +304,10 @@ body {
   .whyUsSection {
     padding: 0px 20px;
   }
-  .ourPerks {
-    flex-flow: column;
-    align-items: center;
-  }
-  .quality {
-    flex-flow: column;
-    /* width: 90%; */
-  }
-  /* .speed,
-  .value {
-    width: 90%; 
-  } */
+.quality,
+.speed,
+.value {
+  height: 350px;
+}
+
 }
