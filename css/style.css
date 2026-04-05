@@ -199,12 +199,11 @@ body {
   margin-bottom: 60px;
 }
 .ourPerks {
-    border: 1px solid red;
-  width: 100%;
+  width: clamp(300px, 100%, 2000px);
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  gap: 20px;
+  gap: clamp(5px, 3vw, 20px);
 }
 .ourPerks h1 {
   font-size: var(--secondary-font);
@@ -220,13 +219,16 @@ body {
 }
 .quality {
   display: flex;
-  width: clamp(280px, 40%, 800px);
+  width: clamp(320px, 50%, 800px);
   border: 1px solid #d9d9da;
+}
+.qualityImg {
+  width: clamp(320px, 50%, 600px);
 }
 .speed,
 .value {
   border: 1px solid #d9d9da;
-  width: clamp(280px, 25%, 490px);
+  width: clamp(300px, 25%, 490px);
   height: auto;
 }
 
@@ -239,7 +241,7 @@ body {
 .speedInfo,
 .valueInfo {
   background-color: var(--bg);
-  padding: 20px;
+  padding: clamp(10px, 2vw, 20px);
 }
 .learnMore {
   font-weight: 600;
@@ -269,6 +271,12 @@ body {
   object-fit: cover;
 }
 
+/* @media (max-width: 900px) {
+.quality {
+  display: flex;
+    flex-direction: column;
+}
+} */
 /* small devices below 630px wide */
 @media (max-width: 630px) {
   .navbar .links {
@@ -289,8 +297,8 @@ body {
   .heroImg {
     height: 250px;
   }
-  .whyUsSection{
-    padding: 0px 50px;
+  .whyUsSection {
+    padding: 0px 20px;
   }
   .ourPerks {
     flex-flow: column;
