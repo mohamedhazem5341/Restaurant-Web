@@ -169,6 +169,10 @@ body {
   color: white;
   font-weight: 500;
   background-color: var(--primary);
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  opacity: 0.9;
 }
 .reBtn {
   padding: 10px 20px;
@@ -320,6 +324,95 @@ body {
 .gridCards .child1 {
   grid-row: 1 / span 2;
 }
+/* ////////////////////// */
+.feedback {
+  padding: 0 50px;
+  margin-bottom: var(--mb);
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.feedInfo {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+.feedInfo h1 {
+  font-size: var(--head-font);
+}
+.feedInfo p {
+  font-size: var(--p-font);
+}
+.ourFeeds {
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+  width: 50%;
+  height: 50%;
+}
+.ourFeeds .socialFeeds {
+  width: 100%;
+  height: 300px;
+  border: var(--border);
+  padding: 20px;
+  overflow: hidden;
+}
+.socialFeeds .slides{
+  display: flex;
+  gap: 20px;
+  min-width: 100%;
+  height: 100%;
+  transition: all .3s ease;
+}
+.slides .feeds {
+  min-width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.ourFeeds .feedTool {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.feedTool .pointFeed {
+  display: flex;
+  gap: 4px;
+}
+.pointFeed .circle {
+  background-color: #929292;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+}
+.circle:hover {
+  background-color: #333;
+}
+.circle.active{
+  background-color: #333;
+
+}
+.btnFeed button {
+  border: var(--border);
+  background-color: var(--card-bg);
+  box-shadow: 5px 5px 15px #3333334d;
+  padding: 15px 20px;
+  margin: 0px 5px;
+  width: 60px;
+}
+.btnFeed button:hover {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+.prev img {
+  transform: rotate(180deg);
+}
+
+
+/* //////////////////////// */
 
 @media (max-width: 1239px) {
   .quality {
@@ -338,6 +431,7 @@ body {
   .navbar .menuToggle {
     display: block;
   }
+  /* ///////////////////// */
   .hero {
     height: auto;
     gap: 50px;
@@ -350,6 +444,7 @@ body {
   .heroImg {
     height: 250px;
   }
+  /* ///////////////////// */
   .whyUsSection {
     padding: 0px 20px;
     text-align: center;
@@ -360,28 +455,41 @@ body {
   .value {
     height: 350px;
   }
-
+  /* /////////////////////////// */
   .numberSpeak .numberAbout {
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  text-align: center;
-}
-.numberAbout h1,
-.numberAbout p {
-  width: 100%;
-}
-
-.numberSpeak .gridCards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(5, 220px);
-  grid-gap: 10px;
-}
-.gridCards .gridChild {
-}
-.gridCards .child1 {
-  grid-row: 1 / span 1;
-}
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: center;
+  }
+  .numberAbout h1,
+  .numberAbout p {
+    width: 100%;
+  }
+  .numberSpeak .gridCards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 220px);
+    grid-gap: 10px;
+  }
+  .gridCards .child1 {
+    grid-row: 1 / span 1;
+  }
+  /* //////////////// */
+  .feedback {
+    flex-flow: column;
+    justify-content: center;
+    gap: 80px;
+  }
+  .feedInfo {
+    text-align: center;
+    gap: 20px;
+  }
+  .ourFeeds {
+    gap: 40px;
+    width: 100%;
+    height: 50%;
+  }
+  /* /////////////////// */
 }
