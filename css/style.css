@@ -5,7 +5,7 @@
   --primary: #d64545;
   --bg: #f2f2f2;
   --border: 1px solid #d9d9da;
-  --head-font: clamp(1.2rem, 5vw, 2.5rem);
+  --head-font: clamp(1.4rem, 5vw, 2.5rem);
   --secondary-font: clamp(1.1rem, 3vw, 1.3rem);
   --p-font: clamp(0.8rem, 2vw, 1rem);
   --h2s-font: clamp(2rem, 3vw, 2.4rem);
@@ -352,10 +352,36 @@ body {
   }
   .whyUsSection {
     padding: 0px 20px;
+    text-align: center;
+    gap: 20px;
   }
   .quality,
   .speed,
   .value {
     height: 350px;
   }
+
+  .numberSpeak .numberAbout {
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: center;
+}
+.numberAbout h1,
+.numberAbout p {
+  width: 100%;
+}
+
+.numberSpeak .gridCards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 220px);
+  grid-gap: 10px;
+}
+.gridCards .gridChild {
+}
+.gridCards .child1 {
+  grid-row: 1 / span 1;
+}
 }
