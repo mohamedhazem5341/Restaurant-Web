@@ -50,7 +50,7 @@ for (i = 0; i < feeds.length; i++) {
 let circle = document.querySelectorAll(".circle");
 
 function updateSlider() {
-  slider.style.transform = `translateX(-${index * 103.8}%)`;
+  slider.style.transform = `translateX(-${index * 100}%)`;
   // to highlight circle number that matches the slide
   for (i = 0; i < circle.length; i++) {
     if (index === i) {
