@@ -509,6 +509,11 @@ body {
   border: 1px solid #89898963;
   background: none;
   backdrop-filter: blur(5px);
+  transition: all .2s ease;
+}
+.stepsBtn button:hover{
+  cursor: pointer;
+  transform: translate(1px, 1px);
 }
 .allSteps .order {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step2.jpg);
