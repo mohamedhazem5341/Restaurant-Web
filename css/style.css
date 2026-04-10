@@ -118,9 +118,9 @@ body {
   bottom: 0px;
   left: 0;
   width: 0%;
-  height: 1px;
+  min-height: 1px;
   background-color: black;
-  transition: all 0.2s ease;
+  transition: width 0.2s ease;
 }
 .navbar li:hover::after {
   width: 100%;
@@ -141,7 +141,7 @@ body {
   background-color: var(--card-bg);
   margin: auto;
   width: clamp(260px, 90vw, 2000px);
-  height: 70vh;
+  min-height: 70vh;
   display: flex;
   justify-content: space-between;
 }
@@ -171,7 +171,7 @@ body {
   color: white;
   font-weight: 500;
   background-color: var(--primary);
-  transition: all 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 .btn:hover {
   opacity: 0.9;
@@ -236,7 +236,7 @@ body {
   justify-content: space-between;
   border: 1px solid #d9d9da;
   width: clamp(310px, 25%, 490px);
-  height: 450px;
+  min-height: 450px;
 }
 .quality {
   flex-flow: row;
@@ -257,7 +257,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: black;
-  transition: all 0.2s ease;
+  transition: letter-spacing 0.2s ease;
 }
 .learnMore span {
   margin-left: 8px;
@@ -271,11 +271,11 @@ body {
 .speedImg,
 .valueImg {
   width: 100%;
-  height: 50%;
+  min-height: 50%;
 }
 .ourPerks img {
   display: block;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -351,7 +351,7 @@ body {
   flex-flow: column;
   gap: 40px;
   width: 50%;
-  height: 50%;
+  min-height: 50%;
 }
 .ourFeeds .socialFeeds {
   width: 100%;
@@ -362,8 +362,8 @@ body {
 .socialFeeds .slides {
   display: flex;
   min-width: 100%;
-  height: 100%;
-  transition: all 0.3s ease;
+  min-height: 100%;
+  transition: transform 0.3s ease;
 }
 .slides .feeds {
   display: grid;
@@ -417,14 +417,14 @@ body {
   background-color: #929292;
   border-radius: 50%;
   width: 8px;
-  height: 8px;
+  min-height: 8px;
   cursor: pointer;
 }
 .circle:hover {
   background-color: #333;
 }
 .circle.active {
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   background-color: #333;
 }
 .btnFeed button {
@@ -495,15 +495,15 @@ body {
   filter: invert(1);
 }
 .allSteps .browse {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step1.webp);
   grid-column: 1 / span 2;
   padding: 40px 40px;
 }
 .allSteps .order {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step2.webp);
 }
 .allSteps .receive {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step3.webp);
 }
 
 .steps h3 {
@@ -536,7 +536,7 @@ body {
   border: 1px solid #89898963;
   background: none;
   backdrop-filter: blur(5px);
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease;
 }
 .stepsBtn button:hover {
   cursor: pointer;
@@ -550,7 +550,7 @@ body {
     flex-direction: column;
   }
   .qualityImg {
-    height: 50%;
+    min-height: 50%;
   }
   .stepsDinner .allSteps {
     grid-template-columns: repeat(1, auto);
@@ -586,7 +586,7 @@ body {
     width: 100%;
   }
   .heroImg {
-    height: 250px;
+    min-height: 250px;
   }
   /* ///////////////////// */
   .whyUsSection {
@@ -597,7 +597,7 @@ body {
   .quality,
   .speed,
   .value {
-    height: 350px;
+    min-height: 350px;
   }
   /* /////////////////////////// */
   .numberSpeak .numberAbout {
@@ -635,7 +635,7 @@ body {
   .ourFeeds {
     gap: 40px;
     width: 100%;
-    height: 50%;
+    min-height: 50%;
   }
   .ourFeeds .feedTool {
     flex-flow: column;
