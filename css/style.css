@@ -7,10 +7,11 @@
   --border: 1px solid #d9d9da;
   --head-font: clamp(1.4rem, 5vw, 2.5rem);
   --secondary-font: clamp(1.1rem, 3vw, 1.3rem);
-  --p-font: clamp(0.8rem, 2vw, 1rem);
   --h2s-font: clamp(2rem, 3vw, 2.4rem);
-  --h4s-font: clamp(1.4rem, 3vw, 2rem);
-  --h3s-font: clamp(0.6rem, 2vw, 0.9rem);
+  --h3s-font: clamp(1.4rem, 3vw, 2rem);
+  --h4s-font: clamp(1.2rem, 2vw, 1.4rem);
+  --h5s-font: clamp(0.6rem, 2vw, 0.9rem);
+  --p-font: clamp(0.8rem, 2vw, 1rem);
   --btn-font: clamp(0.8rem, 2vw, 0.9rem);
   --trans-bg: rgba(52, 52, 52, 0.169);
   --mb: 110px;
@@ -474,6 +475,7 @@ body {
 .allSteps * {
   color: white;
 }
+
 .allSteps .steps {
   background-repeat: no-repeat;
   background-position: center;
@@ -481,18 +483,40 @@ body {
   min-height: 350px;
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;
-  padding: 0 40px;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+.steps .stepsInfo{
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+.allSteps .browse {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step1.jpg);
+  grid-column: 1 / span 2;
+  padding: 40px 40px;
+}
+.allSteps .order {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step2.jpg);
+}
+.allSteps .receive {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step3.jpg);
+}
+
+.steps h3 {
+  font-size: var(--h3s-font);
+  font-weight: 400;
 }
 .steps h4 {
   font-size: var(--h4s-font);
+  font-weight: 500;
 }
-.steps h3 {
-  font-size: var(--h3s-font);
+.steps h5 {
+  font-size: var(--h5s-font);
   font-weight: 700;
 }
 .steps p {
-  font-size: var(--p-font);
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
 }
 .steps a {
   font-size: var(--p-font);
@@ -509,21 +533,11 @@ body {
   border: 1px solid #89898963;
   background: none;
   backdrop-filter: blur(5px);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
-.stepsBtn button:hover{
+.stepsBtn button:hover {
   cursor: pointer;
   transform: translate(1px, 1px);
-}
-.allSteps .order {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step2.jpg);
-}
-.allSteps .receive {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step3.jpg);
-}
-.allSteps .browse {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step1.jpg);
-  grid-column: 1 / span 2;
 }
 /* //////////////////////// */
 /* //////////////////////// */
@@ -629,9 +643,13 @@ body {
   /* /////////////////// */
   .stepsDinner {
     padding: 0 20px;
+  }
+  .stepsDinner > h2 {
     text-align: center;
   }
+
   .allSteps .steps {
-    padding: 20px 20px;
+    justify-content: space-around;
+    padding: 0px 20px;
   }
 }
