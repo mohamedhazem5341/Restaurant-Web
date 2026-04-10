@@ -462,6 +462,10 @@ body {
     width: 100%;
     text-align: center;
   }
+  .navbar li a {
+    display: inline-block;
+    width: 100%;
+  }
   /* ///////////////////// */
   .hero {
     height: auto;
@@ -514,7 +518,6 @@ body {
     justify-content: center;
     gap: 80px;
     padding: 60px 20px;
-
   }
   .feedInfo {
     text-align: center;
