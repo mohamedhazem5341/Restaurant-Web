@@ -326,13 +326,12 @@ body {
 }
 /* ////////////////////// */
 .feedback {
-  padding: 0 50px;
+  padding: 60px 50px;
   margin-bottom: var(--mb);
   background-color: var(--main-bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
 }
 .feedInfo {
   display: flex;
