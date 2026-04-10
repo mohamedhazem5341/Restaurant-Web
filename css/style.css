@@ -367,7 +367,7 @@ body {
 
 .slides .feeds {
   display: grid;
-  grid-template-rows: repeat(4,auto);
+  grid-template-rows: repeat(4, auto);
   padding: 20px;
   min-width: 100%;
   min-height: 100%;
@@ -388,7 +388,7 @@ body {
   width: clamp(40px, 8vw, 60px);
   height: clamp(40px, 8vw, 60px);
 }
-.platformInfo .platformLogo img{
+.platformInfo .platformLogo img {
   border-radius: 20%;
 }
 .platformProfile .profilePhp img {
