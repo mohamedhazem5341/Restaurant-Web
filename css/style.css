@@ -392,6 +392,7 @@ body {
   background-color: #333;
 }
 .circle.active{
+  transition: all .3s ease;
   background-color: #333;
 
 }

@@ -27,24 +27,26 @@ nextBtn.onclick = () => {
   if (index < feeds.length - 1) {
     index++;
     updateSlider();
+  } else if (index === feeds.length - 1) {
+    index = 0;
+    updateSlider();
   }
 };
-
 prevBtn.onclick = () => {
   if (index > 0) {
     index--;
+    updateSlider();
+  } else if (index === 0) {
+    index = feeds.length - 1;
     updateSlider();
   }
 };
 
 // to show as amount of circles as sliders
-
 let pointFeed = document.querySelector(".pointFeed");
-
 for (i = 0; i < feeds.length; i++) {
   pointFeed.innerHTML += `<div class="circle"></div>`;
 }
-
 let circle = document.querySelectorAll(".circle");
 
 function updateSlider() {
@@ -57,7 +59,17 @@ function updateSlider() {
       circle[i].classList.remove("active");
     }
   }
-
-  
 }
 updateSlider();
+// make dots (circles) clickable and change slides
+circle.forEach((dot, j) => {
+  dot.addEventListener("click", () => {
+    for (i = 0; i < circle.length; i++) {
+      if (j === i) {
+        index = i;
+        updateSlider();
+      }
+    }
+  });
+});
+//
