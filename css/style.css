@@ -491,6 +491,10 @@ body {
   flex-flow: column;
   gap: 10px;
 }
+.stepsInfo img{
+  width: clamp(40px, 4vw, 60px);
+  filter: invert(1);
+}
 .allSteps .browse {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url(/images/step1.jpg);
   grid-column: 1 / span 2;
