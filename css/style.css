@@ -581,8 +581,11 @@ body {
 }
 .ready .readyImg {
   margin: 40px 0px;
-  width: 100%;
-  min-width: 250px;
+  width: clamp(250px, 100%, 100%);
+  height: clamp(250px, 100vw, 550px);
+}
+.readyImg img{
+  object-fit: cover;
 }
 /* //////////////////////// */
 .faq h2 {
