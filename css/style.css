@@ -258,7 +258,7 @@ body {
   justify-content: space-between;
   border: 1px solid #d9d9da;
   width: clamp(310px, 25%, 490px);
-  min-height: 450px;
+  height: clamp(350px, 30vw, 400px);
 }
 .quality {
   flex-flow: row;
@@ -654,10 +654,9 @@ body {
     text-align: center;
     gap: 20px;
   }
-  .quality,
-  .speed,
-  .value {
-    min-height: 350px;
+
+  .card {
+
   }
   /* /////////////////////////// */
   .numberSpeak .numberAbout {
