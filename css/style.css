@@ -621,7 +621,6 @@ body {
   display: none;
 }
 .allAQ .answer {
-  padding: 0 30px;
   position: relative;
   background-color: #ffffff;
   overflow: hidden;
@@ -728,6 +727,8 @@ form input {
 .signTerms {
   font-size: clamp(0.7rem, 2vw, 0.8rem);
 }
+/* //// */
+
 /* //// */
 
 /* //// */
@@ -878,4 +879,6 @@ form input {
   form input {
     width: 100%;
   }
+  /* //// */
+
 }
