@@ -572,7 +572,7 @@ body {
   display: flex;
   gap: 20px;
 }
-.ready .readyImg {
+.readyImg {
   margin: 40px 0px;
   width: clamp(250px, 100%, 100%);
   height: clamp(250px, 100vw, 550px);
@@ -668,9 +668,66 @@ body {
   flex-flow: column;
   align-items: start;
   gap: 20px;
-  height: 100vh;
 }
-
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px 20px;
+  width: 100%;
+  margin: 60px 0px;
+}
+.team .member {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+.memberImg {
+  height: clamp(250px, 25vw, 450px);
+}
+.memberImg img {
+  object-fit: cover;
+  width: 100%;
+}
+.member .memberSocial {
+  display: flex;
+  gap: 20px;
+}
+.member .memberInfo {
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+}
+.memberSocial img {
+  width: clamp(25px, 2vw, 30px);
+}
+/* //// */
+.stay {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--card-bg);
+  padding: 120px 50px;
+}
+.stay form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+form input {
+  font-size: var(--h5s-font);
+  width: clamp(150px, 25vw, 350px);
+  padding: 10px;
+  background-color: #d9d9da72;
+  border: 1px solid #b0b0b0;
+}
+.signTerms {
+  font-size: clamp(0.7rem, 2vw, 0.8rem);
+}
 /* //// */
 
 /* //// */
@@ -788,9 +845,10 @@ body {
   .ready .readyBtns {
     flex-flow: column;
   }
-  .ready .readyImg {
+  .readyImg {
     margin: 20px 0px;
   }
+  /* //// */
   .faq {
     padding: 60px 20px 80px;
   }
@@ -800,5 +858,24 @@ body {
   .allAQ p {
     margin: 20px 0px 40px;
     line-height: 20px;
+  }
+  /* //// */
+  .ourTeam {
+    padding: 80px 20px;
+  }
+  .team {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px 20px;
+  }
+  /* //// */
+  .stay {
+    padding: 120px 20px;
+  }
+  .stay form {
+    flex-flow: column;
+    gap: 10px;
+  }
+  form input {
+    width: 100%;
   }
 }
