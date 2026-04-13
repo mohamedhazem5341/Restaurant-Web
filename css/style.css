@@ -835,6 +835,10 @@ form input {
   .allSteps .browse {
     grid-column: 1 / span 1;
   }
+
+   .footer .about {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 /* small devices below 768px wide */
 @media (max-width: 768px) {
