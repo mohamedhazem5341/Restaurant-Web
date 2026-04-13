@@ -777,7 +777,7 @@ form input {
   gap: 40px;
 }
 .ourLogo {
-  width: clamp(40px, 10vw, 120px);
+  width: clamp(80px, 10vw, 120px);
 }
 .about .ourLinks {
   display: flex;
