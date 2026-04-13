@@ -15,6 +15,21 @@
   --trans-bg: rgba(52, 52, 52, 0.169);
   --mb: 110px;
 }
+.links .activeNav a{
+  color: var(--primary);
+  font-weight: 800;
+}
+.activeNav::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  min-height: 1px;
+  background-color: var(--primary);
+  z-index: 1;
+  transition: width 0.2s ease;
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -126,6 +141,7 @@ body {
 /* //// */
 .navbar .links {
   display: flex;
+  align-items: end;
   flex-flow: row wrap;
   gap: clamp(5px, 2vw, 30px);
 }

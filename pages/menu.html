@@ -1,14 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/logo.webp" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/images/logo.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
     <script src="/js/main.js" defer></script>
     <title>Menu</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
       <div class="logo">
         <a href="/index.html">
@@ -18,7 +23,7 @@
 
       <div class="links">
         <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/menu.html">Menu</a></li>
+        <li class="activeNav"><a href="/pages/menu.html">Menu</a></li>
         <li><a href="/pages/dashboard.html">Dashboard</a></li>
         <li><a href="/pages/account.html">Account</a></li>
       </div>
@@ -32,5 +37,26 @@
         <li><a href="/pages/account.html">Account</a></li>
       </div>
     </nav>
-</body>
+
+    <section class="heroSection">
+      <div class="hero">
+        <div class="heroInfo">
+          <h5>Our Full Menu</h5>
+          <h2>Every dish, crafted with intention</h2>
+          <p>
+            From morning brunch to late-night dessert — browse our full
+            selection of freshly prepared dishes
+          </p>
+        </div>
+        <div class="heroRate">
+          <div class="dishes"><span>48</span> Dishes</div>
+          <hr>
+          <div class="categories"><span>7</span> Categories</div>
+          <hr>
+          <div class="rating"><span>4.9★</span> Avg rating</div>
+        </div>
+      </div>
+    </section>
+
+  </body>
 </html>
