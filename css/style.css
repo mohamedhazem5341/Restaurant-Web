@@ -162,7 +162,7 @@ body {
   background-color: var(--card-bg);
   margin: auto;
   width: clamp(260px, 90vw, 2000px);
-  min-height: 70vh;
+  height: clamp(min-height, 40vw, 70vh);
   display: flex;
   justify-content: space-between;
 }
@@ -765,8 +765,7 @@ form input {
   }
   /* //// */
   .hero {
-    height: auto;
-    gap: 50px;
+    gap: 20px;
     flex-direction: column;
   }
   .heroInfo,
@@ -774,7 +773,7 @@ form input {
     width: 100%;
   }
   .heroImg {
-    min-height: 250px;
+    height: clamp(180px, 50vw, 350px);
   }
   /* //// */
   .whyUsSection {
@@ -880,5 +879,4 @@ form input {
     width: 100%;
   }
   /* //// */
-
 }
