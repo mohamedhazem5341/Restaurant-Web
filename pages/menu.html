@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/logo.webp" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/menu.css" />
-    <script src="/js/main.js" defer></script>
+    <script src="/js/menu.js" defer></script>
     <title>Menu</title>
   </head>
   <body>
@@ -50,13 +50,33 @@
         </div>
         <div class="heroRate">
           <div class="dishes"><span>48</span> Dishes</div>
-          <hr>
+          <hr />
           <div class="categories"><span>7</span> Categories</div>
-          <hr>
+          <hr />
           <div class="rating"><span>4.9★</span> Avg rating</div>
         </div>
       </div>
     </section>
 
+    <section class="dishNav">
+      <div class="dishesList">
+        <li class="selected">All</li>
+        <li>Starters</li>
+        <li>Mains</li>
+        <li>Pasta</li>
+        <li>Salads</li>
+        <li>Desserts</li>
+        <li>Drinks</li>
+      </div>
+      <div class="dishesInput">
+        <input id="dishesInput" type="text" placeholder="Search dishes..." />
+        <select class="sortSelect" name="sortSelect" id="sortSelect">
+          <option value="">Sort: Default</option>
+          <option value="">Price: Low → High</option>
+          <option value="">Price: High → Low</option>
+          <option value="">Top Rated</option>
+        </select>
+      </div>
+    </section>
   </body>
 </html>
