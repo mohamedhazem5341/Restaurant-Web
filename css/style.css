@@ -788,12 +788,14 @@ form input {
   font-weight: 600;
   margin-bottom: 10px;
 }
-.ourLinks a {
+.ourLinks a,
+.OurTerms a{
   text-decoration: none;
   color: rgb(80, 80, 80);
   transition: color 0.3s ease;
 }
-.ourLinks a:hover {
+.ourLinks a:hover,
+.OurTerms a:hover {
   color: black;
 }
 .credit {
