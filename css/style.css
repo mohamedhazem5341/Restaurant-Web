@@ -15,7 +15,8 @@
   --trans-bg: rgba(52, 52, 52, 0.169);
   --mb: 110px;
 }
-.links .activeNav a{
+.links .activeNav a,
+.smallMenu .activeNav a{
   color: var(--primary);
   font-weight: 800;
 }
@@ -176,7 +177,7 @@ body {
 .hero {
   border: 1px solid #33333325;
   background-color: var(--card-bg);
-  margin: auto;
+  margin: 0px 50px;
   width: clamp(260px, 90vw, 2000px);
   height: clamp(min-height, 40vw, 70vh);
   display: flex;
