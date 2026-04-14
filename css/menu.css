@@ -135,7 +135,7 @@ option:focus {
   }
   .hero {
     align-items: start;
-    margin: 0px 0px;
+    margin: 0px auto;
   }
   .hero .heroInfo {
     width: 100%;
