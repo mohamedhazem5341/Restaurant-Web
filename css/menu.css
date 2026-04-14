@@ -1,12 +1,13 @@
 .heroSection {
   margin-bottom: 0px;
-  padding: 0px 0px 60px;
+  padding: 0px 0px 80px;
 }
 .hero {
   background: none;
   border: none;
   align-items: end;
-  padding: 0px 0px 20px;
+  margin: 0px 50px;
+  width: clamp(320px, 90vw, 2000px);
 }
 .hero .heroInfo {
   width: 40%;
@@ -17,18 +18,18 @@
   text-transform: uppercase;
 }
 .heroInfo h2 {
+  font-size: clamp(1.4rem, 4vw, 2.6rem);
   font-weight: 600;
 }
 .heroInfo p {
   color: #6d6d6d;
-  line-height: 24px;
 }
 .hero .heroRate {
-  width: clamp(220px, 80vw, 450px);
-  text-align: center;
-  color: #6d6d6d;
   display: flex;
   justify-content: space-between;
+  width: clamp(220px, 80vw, 450px);
+  color: #6d6d6d;
+  text-align: center;
   font-size: clamp(0.6rem, 2vw, 0.9rem);
 }
 .heroRate hr {
@@ -127,9 +128,12 @@ option:focus {
 
 /* //// */
 @media (max-width: 768px) {
+  .heroSection {
+    padding: 0px 0px 40px;
+  }
   .hero {
     align-items: start;
-    margin: 0px 20px;
+    margin: 0px 0px;
   }
   .hero .heroInfo {
     width: 100%;
