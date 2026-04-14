@@ -39,15 +39,13 @@ dishesList.forEach((li, i) => {
 let dishesInput = document.getElementById("dishesInput");
 
 const cardName = Array.from(document.querySelectorAll(".cardInfo .cardName"));
-  console.log(cardName[0].innerHTML);
-  let foodNames = []
-  for(i = 0; i < cardName.length; i++){
-    foodNames.push(cardName[i].innerHTML)
-  }
-  console.log(foodNames);
+console.log();
 
-
-
+let foodNames = [];
+for (i = 0; i < cardName.length; i++) {
+  foodNames.push(cardName[i].innerHTML.toLowerCase());
+}
+console.log(foodNames);
 
 
 let foodMenu = document.querySelector(".foodMenu");
@@ -56,13 +54,13 @@ dishesInput.addEventListener("input", () => {
   const searchFood = dishesInput.value.toLowerCase();
   console.log(searchFood);
 
-  //  const result = cardName.filter((name) => name.includes(searchFood));
-  //  console.log(result);
-  
+   const result = foodNames.filter((name) => name.includes(searchFood));
+   console.log(result);
+
   // for (i = 0; i < cardName.length; i++) {
   //   if (cardName[i].innerHTML.includes(searchFood)) {
   //     foodCard[i].classList.add("show")
-  //   } 
+  //   }
   //   if (cardName[i].innerHTML.includes(!searchFood)) {
   //     foodCard[i].classList.add("hide")
   //   }
