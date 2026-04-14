@@ -134,14 +134,36 @@ option:focus {
 .foodMenu {
   padding: 50px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 275px);
   grid-gap: 20px;
   height: 100vh;
 }
-.foodCard {
+.foodMenu .foodCard {
+  text-decoration: none;
+  color: rgb(125, 125, 125);
   height: min-content;
-  border: var(--border);
-  background-color: var(--bg);
+  transition: color .3s ease;
+}
+.foodCard:hover{
+  color: black;
+}
+.foodCard .cardImg{
+  width: 100%;
+  height: clamp(200px,30vw, 220px);
+}
+.cardImg img{
+  object-fit: cover;
+}
+.foodCard .cardInfo{
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+  margin: 20px 0px;
+  padding: 0px;
+  background: none;
+}
+.foodCard .cardBtn{
+
 }
 /* //// */
 
