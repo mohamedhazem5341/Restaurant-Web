@@ -135,26 +135,30 @@ option:focus {
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(4, 275px);
-  grid-gap: 20px;
-  height: 100vh;
+  gap: 40px 20px;
 }
 .foodMenu .foodCard {
+  min-height: min-content;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+.foodCard a {
   text-decoration: none;
   color: rgb(125, 125, 125);
-  height: min-content;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
-.foodCard:hover{
+.foodCard:hover a {
   color: black;
 }
-.foodCard .cardImg{
+.foodCard .cardImg {
+  cursor: pointer;
   width: 100%;
-  height: clamp(200px,30vw, 220px);
+  height: clamp(200px, 30vw, 220px);
 }
-.cardImg img{
+.cardImg img {
   object-fit: cover;
 }
-.foodCard .cardInfo{
+.foodCard .cardInfo {
   display: flex;
   flex-flow: column;
   gap: 4px;
@@ -162,8 +166,19 @@ option:focus {
   padding: 0px;
   background: none;
 }
-.foodCard .cardBtn{
-
+.foodCard .cardBtn {
+  display: flex;
+  gap: 20px;
+}
+.cardBtn button {
+  box-shadow: 8px 8px 8px -8px rgba(0, 0, 0, 0.75);
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+.cardBtn button:hover {
+  box-shadow: none;
+  transform: translate(1px, 1px);
 }
 /* //// */
 
@@ -210,7 +225,5 @@ option:focus {
   }
   .foodCard {
     height: min-content;
-    border: var(--border);
-    background-color: var(--bg);
   }
 }
