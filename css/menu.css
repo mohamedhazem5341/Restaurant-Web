@@ -28,7 +28,7 @@
 .hero .heroRate {
   display: flex;
   justify-content: space-between;
-  width: clamp(220px, 80vw, 450px);
+  width: clamp(280px, 80vw, 450px);
   color: #6d6d6d;
   text-align: center;
   font-size: clamp(0.6rem, 2vw, 0.9rem);
@@ -141,7 +141,7 @@ option:focus {
     width: 100%;
   }
   .heroRate {
-    margin: auto;
+    margin: 0px auto;
   }
   /* //// */
   .dishNav {
