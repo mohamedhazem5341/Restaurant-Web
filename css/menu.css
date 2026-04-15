@@ -136,6 +136,7 @@ option:focus {
   display: grid;
   grid-template-columns: repeat(4, 275px);
   gap: 40px 20px;
+  min-height: 100vh;
 }
 .foodMenu .foodCard {
   min-height: min-content;
