@@ -45,14 +45,6 @@ console.log(cardName);
 dishesInput.addEventListener("input", () => {
   const searchValue = dishesInput.value.toLowerCase();
 
-  // foodCard.forEach(card => {
-  //   const name = card.querySelector(".cardName").textContent.toLowerCase();
-
-  //   const isMatch = name.includes(searchValue);
-
-  //   card.classList.toggle("hide", !isMatch);
-  // });
-
   foodCard.forEach((card) => {
     const name = card.querySelector(".cardName").textContent.toLowerCase();
     if (name.includes(searchValue)) {
