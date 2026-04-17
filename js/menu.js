@@ -1,6 +1,5 @@
 let categories = document.querySelector(".categories span");
 let dishes = document.querySelector(".dishes span");
-
 //
 //
 let dishesList = document.querySelectorAll(".dishesList li");
@@ -38,9 +37,7 @@ dishesList.forEach((li, i) => {
 
 let dishesInput = document.getElementById("dishesInput");
 let foodMenu = document.querySelector(".foodMenu");
-
 const cardName = Array.from(document.querySelectorAll(".cardInfo .cardName"));
-console.log(cardName);
 
 dishesInput.addEventListener("input", () => {
   const searchValue = dishesInput.value.toLowerCase();
@@ -56,3 +53,9 @@ dishesInput.addEventListener("input", () => {
     }
   });
 });
+
+// let lolBtn = document.querySelector("#lol")
+
+// lolBtn.addEventListener("click", ()=>{
+//   location.href = "/index.html#feedback"
+// })

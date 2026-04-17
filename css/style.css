@@ -1,17 +1,21 @@
 :root {
-  --main-bg: #faecec;
-  --card-bg: #f6d9d9;
   --primary: #d64545;
+  --primary-bg: #faecec;
+  /* --secondary: #f2f2f2;
+  --secondary-bg: #fff; */
   --bg: #f2f2f2;
+  --card-bg: #f6d9d9;
   --border: 1px solid #d9d9da;
   --head-font: clamp(1.4rem, 5vw, 2.5rem);
   --secondary-font: clamp(1.1rem, 3vw, 1.3rem);
   --h2s-font: clamp(2rem, 3vw, 2.4rem);
+
   --h3s-font: clamp(1.4rem, 3vw, 2rem);
   --h4s-font: clamp(1.2rem, 2vw, 1.4rem);
   --h5s-font: clamp(0.6rem, 2vw, 0.9rem);
-  --p-font: clamp(0.8rem, 2vw, 1rem);
+
   --btn-font: clamp(0.8rem, 2vw, 0.9rem);
+  --p-font: clamp(0.8rem, 2vw, 1rem);
   --trans-bg: rgba(52, 52, 52, 0.169);
   --mb: 110px;
 }
@@ -60,7 +64,7 @@ body {
 .heroSection {
   padding: 50px 0px;
   margin-bottom: var(--mb);
-  background-color: var(--main-bg);
+  background-color: var(--primary-bg);
 }
 .hero {
   border: 1px solid #33333325;
@@ -256,7 +260,7 @@ body {
 .feedback {
   padding: 60px 50px;
   margin-bottom: var(--mb);
-  background-color: var(--main-bg);
+  background-color: var(--primary-bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -694,7 +698,7 @@ form input {
   margin-bottom: 10px;
 }
 .ourLinks a,
-.OurTerms a{
+.OurTerms a {
   text-decoration: none;
   color: rgb(80, 80, 80);
   transition: color 0.3s ease;
@@ -741,7 +745,7 @@ form input {
     grid-column: 1 / span 1;
   }
 
-   .footer .about {
+  .footer .about {
     grid-template-columns: repeat(3, 1fr);
   }
 }
