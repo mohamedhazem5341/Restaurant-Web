@@ -1,3 +1,57 @@
+
+.toUpDiv {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  display: none;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px 0px;
+  transition:
+    box-shadow 0.1s ease,
+    transform 0.1s ease;
+}
+.toUpDiv:hover {
+  box-shadow: none;
+  transform: translate(1px, 1px);
+}
+.toUpDiv .toUpBtn {
+  position: relative;
+  width: clamp(50px, 10vw, 50px);
+  z-index: 2;
+  background: var(--primary-bg);
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+}
+.toUpBtn img {
+  transform: rotate(-90deg);
+  width: 100%;
+}
+.toUpDiv .animatedBorder {
+  border-radius: 50%;
+  position: absolute;
+  inset: -3px;
+  z-index: 1;
+  background-image: linear-gradient(
+    to right,
+    #443742,
+    #846c5b,
+    #cea07e,
+    #edd9a3
+  );
+  animation: borderAnimation 8s linear infinite;
+}
+@keyframes borderAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ////////////////////////// */
 .links .activeNav a,
 .smallMenu .activeNav a {
   color: var(--primary);
