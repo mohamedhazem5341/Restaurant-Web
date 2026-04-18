@@ -12,7 +12,7 @@
   flex-flow: column;
   align-items: start;
   gap: 20px;
-  width: clamp(290px, 50vw, 450px);
+  width: clamp(300px, 50vw, 450px);
 }
 .addFrom div {
   width: 100%;
@@ -20,7 +20,10 @@
   justify-content: space-between;
   align-items: center;
 }
-.formDescribe {
+div input{
+    width: clamp(200px, 25vw, 350px);
+}
+.addFrom .formDescribe {
   flex-flow: wrap;
 }
 .formDescribe textarea {
@@ -30,7 +33,7 @@
   width: 100%;
   min-height: 200px;
 }
-#foodImageInput {
+.addFrom #foodImageInput {
   width: 100%;
 }
 label{
@@ -50,7 +53,7 @@ label[for="foodImageInput"] img{
   .addSection {
     flex-flow: column-reverse;
     align-items: center;
-    padding: 50px 20px;
+    padding: 50px 10px;
     gap: 20px;
   }
   .addFrom {
@@ -58,6 +61,5 @@ label[for="foodImageInput"] img{
     flex-flow: column;
     align-items: start;
     gap: 20px;
-    width: 100%;
   }
 }
