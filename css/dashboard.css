@@ -1,0 +1,62 @@
+.addSection {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px;
+  margin-top: var(--mb);
+  margin-bottom: var(--mb);
+}
+.addSection .addFrom {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  gap: 20px;
+  width: clamp(290px, 50vw, 450px);
+}
+.addFrom div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formDescribe {
+  flex-flow: wrap;
+}
+.formDescribe textarea {
+  background: var(--bg);
+  border: var(--border);
+  resize: none;
+  width: 100%;
+  min-height: 200px;
+}
+#foodImageInput {
+  width: 100%;
+}
+label{
+    font-weight: bold;
+}
+label[for="foodImageInput"] {
+  display: block;
+  width: clamp(290px, 30vw, 400px);
+  height: clamp(200px, 40vw, 400px);
+}
+label[for="foodImageInput"] img{
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .addSection {
+    flex-flow: column-reverse;
+    padding: 50px 20px;
+    gap: 20px;
+  }
+  .addFrom {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+  }
+}

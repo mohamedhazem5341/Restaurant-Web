@@ -1,11 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/navBar.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <script src="/js/navBar.js" defer></script>
     <title>Dashboard</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="toUpDiv">
+      <button class="toUpBtn"><img src="/images/arrow.webp" alt="" /></button>
+      <div class="animatedBorder"></div>
+    </div>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/images/logo.webp" alt="" />
+        </a>
+      </div>
+
+      <div class="links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/menu.html">Menu</a></li>
+        <li class="activeNav"><a href="/pages/dashboard.html">Dashboard</a></li>
+        <li><a href="/pages/account.html">Account</a></li>
+      </div>
+      <button id="" class="menuToggle">
+        <img src="/images/menu.webp" alt="" />
+      </button>
+      <div class="smallMenu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/menu.html">Menu</a></li>
+        <li class="activeNav"><a href="/pages/dashboard.html">Dashboard</a></li>
+        <li><a href="/pages/account.html">Account</a></li>
+      </div>
+    </nav>
+
+    <section class="addSection">
+      <form class="addFrom" action="">
+        
+        <input id="foodImageInput" type="file" width="48" height="48" />
+
+        <div class="formName">
+          <label for="foodNameInput">Food Name:</label>
+          <input id="foodNameInput" type="text" required />
+        </div>
+
+        <div class="formDescribe">
+          <label for="foodDescribeInput">Food Describe:</label>
+          <textarea name="foodDescribeInput" id="foodDescribeInput"></textarea>
+        </div>
+
+        <div class="formPrice">
+          <label for="foodPriceInput">Food Price:</label>
+          <input id="foodPriceInput" type="number" required />
+        </div>
+        <button class="primaryBtn">ADD</button>
+      </form>
+
+      <div class="formImage">
+        <label for="foodImageInput"
+          ><img src="/images/img3.webp" alt=""
+        /></label>
+      </div>
+    </section>
+    <hr />
+    <hr />
+  </body>
 </html>
