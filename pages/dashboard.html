@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/logo.webp" type="image/x-icon" />
     <link rel="stylesheet" href="/css/navBar.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
     <script src="/js/navBar.js" defer></script>
+    <script src="/js/dashboard.js" defer></script>
     <title>Dashboard</title>
   </head>
   <body>
@@ -40,8 +43,7 @@
 
     <section class="addSection">
       <form class="addFrom" action="">
-        <input id="foodImageInput" type="file" width="48" height="48" />
-
+        <input id="foodImageInput" type="file"/>
         <div class="formName">
           <label for="foodNameInput">Food Name:</label>
           <input id="foodNameInput" type="text" required />
@@ -56,14 +58,19 @@
           <label for="foodPriceInput">Food Price:</label>
           <input id="foodPriceInput" type="number" required />
         </div>
-        <button class="primaryBtn">ADD</button>
+        <button id="addFoodBtn" class="primaryBtn">ADD</button>
       </form>
 
       <div class="previewImage">
-          <img src="/images/img3.webp" alt="" />
+        <img src="/images/img3.webp" alt="" />
       </div>
     </section>
     <hr />
     <hr />
+
+    <section class="foodMenu">
+
+    </section>
+
   </body>
 </html>
