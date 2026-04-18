@@ -39,12 +39,12 @@ div input{
 label{
     font-weight: bold;
 }
-label[for="foodImageInput"] {
+.previewImage {
   display: block;
   width: clamp(290px, 30vw, 400px);
   height: clamp(200px, 40vw, 400px);
 }
-label[for="foodImageInput"] img{
+.previewImage img{
     object-fit: cover;
     border-radius: 10px;
 }
